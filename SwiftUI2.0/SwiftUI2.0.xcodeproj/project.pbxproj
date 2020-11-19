@@ -10,7 +10,7 @@
 		3438F5B025652E99000ECEE4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438F5AF25652E99000ECEE4 /* SearchBar.swift */; };
 		346555E72564FD68002B1D7F /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346555E62564FD68002B1D7F /* AppInfo.swift */; };
 		346555F1256507A1002B1D7F /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 346555F0256507A1002B1D7F /* KingfisherSwiftUI */; };
-		346FBC0225638DB500208688 /* SwiftUI2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FBC0125638DB500208688 /* SwiftUI2_0App.swift */; };
+		346FBC0225638DB500208688 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FBC0125638DB500208688 /* Main.swift */; };
 		346FBC0425638DB500208688 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346FBC0325638DB500208688 /* ContentView.swift */; };
 		346FBC0625638DB600208688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346FBC0525638DB600208688 /* Assets.xcassets */; };
 		346FBC0925638DB700208688 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346FBC0825638DB700208688 /* Preview Assets.xcassets */; };
@@ -22,7 +22,7 @@
 		3438F5AF25652E99000ECEE4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		346555E62564FD68002B1D7F /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		346FBBFE25638DB500208688 /* SwiftUI2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		346FBC0125638DB500208688 /* SwiftUI2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI2_0App.swift; sourceTree = "<group>"; };
+		346FBC0125638DB500208688 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		346FBC0325638DB500208688 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		346FBC0525638DB600208688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		346FBC0825638DB700208688 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -62,12 +62,10 @@
 		346FBC0025638DB500208688 /* SwiftUI2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				346FBC0125638DB500208688 /* SwiftUI2_0App.swift */,
-				346555E62564FD68002B1D7F /* AppInfo.swift */,
-				346FBC112563950800208688 /* GridViewModel.swift */,
-				3438F5AF25652E99000ECEE4 /* SearchBar.swift */,
-				346FBC1825639B6B00208688 /* Models.swift */,
-				346FBC0325638DB500208688 /* ContentView.swift */,
+				34E7F945256639FF00F0F5DF /* Views */,
+				34E7F944256639E800F0F5DF /* Model */,
+				34E7F943256639E000F0F5DF /* ViewModel */,
+				346FBC0125638DB500208688 /* Main.swift */,
 				346FBC0525638DB600208688 /* Assets.xcassets */,
 				346FBC0A25638DB700208688 /* Info.plist */,
 				346FBC0725638DB700208688 /* Preview Content */,
@@ -81,6 +79,32 @@
 				346FBC0825638DB700208688 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34E7F943256639E000F0F5DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				346FBC112563950800208688 /* GridViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		34E7F944256639E800F0F5DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				346FBC1825639B6B00208688 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34E7F945256639FF00F0F5DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				346FBC0325638DB500208688 /* ContentView.swift */,
+				3438F5AF25652E99000ECEE4 /* SearchBar.swift */,
+				346555E62564FD68002B1D7F /* AppInfo.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +185,7 @@
 				346FBC122563950800208688 /* GridViewModel.swift in Sources */,
 				346555E72564FD68002B1D7F /* AppInfo.swift in Sources */,
 				346FBC0425638DB500208688 /* ContentView.swift in Sources */,
-				346FBC0225638DB500208688 /* SwiftUI2_0App.swift in Sources */,
+				346FBC0225638DB500208688 /* Main.swift in Sources */,
 				346FBC1925639B6B00208688 /* Models.swift in Sources */,
 				3438F5B025652E99000ECEE4 /* SearchBar.swift in Sources */,
 			);
@@ -301,7 +325,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nirajtiwari.SwiftUI2-0";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nirajtiwari.GridList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nirajtiwari.SwiftUI2-0";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nirajtiwari.GridList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
