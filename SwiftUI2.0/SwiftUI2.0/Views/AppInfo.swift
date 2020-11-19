@@ -1,5 +1,5 @@
 import SwiftUI
-import KingfisherSwiftUI
+import SDWebImageSwiftUI
 
 
 struct AppInfo: View {
@@ -14,8 +14,10 @@ struct AppInfo: View {
         
         VStack(alignment: .leading, spacing: 4) {
             
-            KFImage(URL(string: app.artworkUrl100)!)
+            WebImage(url: URL(string: app.artworkUrl100))
                 .resizable()
+                .indicator(.activity)
+                .transition(.fade(duration: 0.5))
                 .scaledToFit()
                 .cornerRadius(20)
             
