@@ -53,3 +53,17 @@ struct SearchBar: View {
         }
     }
 }
+
+struct SearchBar_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            SearchBar(isSearching: .constant(false) , searchText: .constant(""))
+                .preferredColorScheme(.dark)
+                .previewLayout(.fixed(width: 400, height: 200))
+            
+            SearchBar(isSearching: .constant(true) , searchText: .constant("Whatsapp"))
+                .preferredColorScheme(.dark)
+                .previewLayout(.fixed(width: 400, height: 200))
+        }
+    }
+}
