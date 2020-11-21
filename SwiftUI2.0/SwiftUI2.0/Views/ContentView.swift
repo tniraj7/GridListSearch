@@ -26,6 +26,7 @@ struct ContentView: View {
                         
                         ForEach(vm.results.filter{ "\($0)".contains(searchText) || searchText.isEmpty }, id: \.self) { app in
                             AppInfo(app: app)
+                                .animation(.spring())
                         }
                         
                     }).padding(.horizontal, 12)
