@@ -42,3 +42,20 @@ struct AppInfo: View {
         }.padding()
     }
 }
+
+struct AppInfo_Previews: PreviewProvider {
+    
+    static let results = Results(
+        name: "Facebook, Inc.",
+        copyright: "© Facebook, Inc.",
+        artworkUrl100: "https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/de/c6/66/dec66632-729d-db69-f3fb-5d21457adedf/Icon-Production-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/200x200bb.png",
+        releaseDate: "2019-02-05"
+    )
+    
+    static var previews: some View {
+        AppInfo(app: results)
+            .preferredColorScheme(.dark)
+            .previewLayout(.fixed(width: 150, height: 200))
+            
+    }
+}
